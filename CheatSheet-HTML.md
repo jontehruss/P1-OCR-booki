@@ -1,4 +1,5 @@
 # Les balises
+```html
 <!DOCTYPE html>
 <!-- Cette balise indique le type de document (HTML) et permet aux moteurs de recherche de comprendre le contenu du document. -->
 
@@ -80,10 +81,11 @@
 
 <nav>
  <!-- Cette balise est utilisée pour définir un menu navigateur, qui peut être utilisé pour offrir des liens vers d’autres parties du document ou des pages web. -->
+```
 
-# Les attributs de balises 
+# Les attributs de balises
  Voici une liste des attributs courants des balises HTML les plus utilisées, ainsi qu'une brève explication de chacun d'eux :
-
+```html
 1. `id`: Cet attribut est utilisé pour définir un identifiant unique pour un élément dans le document. Vous pouvez l'utiliser pour donner un nom à un élément, par exemple `id="myButton"` pour un bouton.
 2. `class`: Cet attribut est utilisé  pour ajouter une classe à un élément. Les classes peuvent être utilisées pour définir des styles ou des fonctionnalités supplémentaires pour l'élément. Par exemple, vous pouvez ajouter la classe `class="myClass"` à un élément pour donner un style spécifique.
 3. `style`: Cet attribut est utilisé pour définir des styles pour un élément. Vous pouvez l'utiliser pour définir des styles globaux ou des styles spécifiques pour un élément. Par exemple, vous pouvez ajouter `style="color: blue"` à un élément pour donner une couleur bleue.
@@ -94,5 +96,4 @@
 8. `role`: Cet attribut est utilisé pour définir le rôle d'un élément. Vous pouvez l'utiliser pour spécifier si un élément est un bouton, un menu, etc. Par exemple, vous pouvez ajouter `role="button"` à un élément pour créer un bouton.
 9. `tabindex`: Cet attribut est utilisé  pour définir l'index de navigation d'un élément. Vous pouvez l'utiliser pour spécifier l'ordre dans lequel un élément doit être navigué, par exemple `tabindex="0"` pour le premier élément dans une liste.
 10. `accesskey`: Cet attribut est utilisé  pour définir la clé d'accès d'un élément. Vous pouvez l'utiliser pour spécifier la clé d'accès d'un élément, par exemple `accesskey="s"` pour un élément qui a une clé d'accès spécifique.
-
-J'espère que cela vous aidera à comprendre les attributs courants des balises HTML les plus utilisées !
+```
