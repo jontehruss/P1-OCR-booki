@@ -116,9 +116,23 @@ header {
 }
 
 /****** info FA ***********/
+.info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* border-style: dashed;
+    border-color: red;  */
+}
 #fa-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
     border-style: solid;
     border-color: #313335;
+    width: 10px;
+    height: 10px;
+    padding: 7px;
     border-radius: 100%;
 }
 
