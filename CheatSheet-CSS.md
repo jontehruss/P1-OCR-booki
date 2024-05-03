@@ -39,3 +39,11 @@ div {
     width: 10px; /* définit la largeur de l’élément.*/
 }
 ```
+
+```css
+.hebergements-cards {} s'applique à tous les element dans le conteneur.
+
+.hebergements-cards .card {} cible uniquement les éléments avec la classe "card".
+
+.hebergements-cards card {} cible également uniquement les éléments avec la classe "card" en se basant sur leur nom de classe plutôt que tout autre caractéristique.
+```
