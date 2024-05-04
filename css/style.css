@@ -126,30 +126,73 @@ header {
 /****** Rechercher ***********/
 .search {
     /* background-color: #F2F2F2; */
-    padding: 15px;
-    border-style: dashed;
-    border-color: red;
+    /* padding: 15px; */
+    margin-bottom: 15px;
+    /* border-style: dashed;
+    border-color: red; */
 }
 
 .search #fa-location-dot {
     padding: 15px;
-    border-top-left-radius: 40%;
-    border-bottom-left-radius: 40%;
+    margin-right: 0px;
+    border-radius: 15px 0px 0px 15px;
     background-color: #F2F2F2;
+    border-style: solid;
+    border-color: #F2F2F2;
 }
 
 .search #search-input {
-    /* padding: 0px; */
-    padding-left: 0px;
-    border-top-left-radius: 40%;
-    border-bottom-left-radius: 40%;
-    /* background-color: #F2F2F2; */
+    padding-top: 15px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    margin-top: -10px;
+    margin-left: -5px;
+    border-top-style: solid;
+    border-top-color: #F2F2F2;
+    border-bottom-style: solid;
+    border-bottom-color: #F2F2F2;
+    border-right-style: none;
+    border-left-style: none;
+    font-weight: 900;
 }
 
+.search-button {
+    padding-top: 15px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    padding-right: 15px; 
+    border-radius: 0px 15px 15px 0px;
+    border-style: none;
+    background-color: #0065FC;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+
+
 /****** Bouttons de filtre ***********/
-.filters {
-    /* border-style: dashed;
-    border-color: red; */
+.filters span {
+    color: #000000;
+    font-weight: 900;
+    font-size: larger;
+}
+
+.filter-button {
+    padding: 10px;
+    margin:15px;
+    border-radius: 45px;
+    border: solid #F2F2F2;
+    background-color: #ffffff;
+    font-weight: 900;
+    font-size: large;
+}
+
+.filter-button:hover {
+    background-color: #F2F2F2;
+}
+
+.info {
+    margin-bottom : 15px;
 }
 
 /****** info FA ***********/
@@ -165,8 +208,8 @@ header {
     justify-content: center;
     align-items: center;
     margin-right: 7px;
-    border-style: solid;
-    border-color: #313335;
+    border: solid #F2F2F2;
+    /* border-color: #313335; */
     width: 10px;
     height: 10px;
     padding: 7px;

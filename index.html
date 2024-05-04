@@ -20,8 +20,8 @@
             <img class="logo" src="images\logo\Booki.png">
             <nav class="nav-menu">
                 <ul>
-                    <ol><a href="#top">Hébergements</a></ol>
-                    <ol><a href="#top">Activités</a></ol>
+                    <ol><a href="#hebergements">Hébergements</a></ol>
+                    <ol><a href="#activites">Activités</a></ol>
                 </ul>
             </nav>           
         </header>
@@ -33,11 +33,11 @@
                 <p>En plein centre-vile ou en plaine nature</p>
             </div>
 
-            <div class="search">
+            <form class="search">
                 <i class="fa-solid fa-location-dot" id="fa-location-dot"></i>
-                <input class="text-input" type="text" id="tsearch-input" placeholder="Marseille, France">
+                <input class="text-input" type="text" id="search-input" placeholder="Marseille, France">
                 <button class="search-button" type="submit">Rechercher</button>
-            </div>
+            </form>
 
             <div class="filters">
                 <span>Filtres</span>
@@ -56,7 +56,7 @@
                 <p> Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 
-            <div class="hebergements-and-populaires">
+            <div class="hebergements-and-populaires" id="hebergements">
 
                 <section class="hebergements">
 
@@ -251,7 +251,7 @@
                 </section>
             </div>
 
-            <div class="activites">
+            <div class="activites" id="activites">
                 <h2>Activités à Marseille</h2>
                 <section class="activites-cards">
                     <frog ><img id="frog" src="images\frog-green.svg">....The Forg ! </frog>
