@@ -21,7 +21,6 @@
     color: var(--fa-grey);
 }
 
-
 body {
     display: flex;
     justify-content: center;
@@ -40,7 +39,7 @@ a {
 }
 
 .section-title {
-    margin: 0;
+    margin: 0px 0px 20px 10px;
     font-size: 22px;
 }
 
@@ -98,6 +97,7 @@ header .logo {
 .nav-menu ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .nav-menu ol {
@@ -129,8 +129,25 @@ header .logo {
     margin-bottom: 35px;
 }
 
+/****** Lien/Accordéeon afficher plus ***********/
+#show-more {
+    display:flex;
+    flex-direction: row;
+}
+
+#show-more a {
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 15px;
+    margin-top: 20px;
+    align-self: flex-end;
+}
+
+
 /****** Rechercher ***********/
 .search {
+    display: flex;
+    flex-direction: row;
     margin-bottom: 20px;
 }
 
@@ -147,8 +164,6 @@ header .logo {
     padding-top: 15px;
     padding-bottom: 13px;
     padding-left: 15px;
-    margin-top: -10px;
-    margin-left: -5px;
     border-top-style: solid;
     border-top-color: var(--main-bg-color);
     border-bottom-style: solid;
@@ -196,13 +211,10 @@ header .logo {
 
 /****** info FA ***********/
 .info {
-    margin-bottom : 15px;
-}
-
-.info {
     display: flex;
     align-items: center;
     flex-direction: row;
+    margin-bottom : 25px;
 }
 #fa-info {
     display: flex;
@@ -233,6 +245,8 @@ header .logo {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    display:flex;
+    flex-direction: column;
 }
 
 .hebergements-title {
@@ -246,12 +260,13 @@ header .logo {
     flex-direction: row;
     height: auto;
     width: auto;
+    /* margin-bottom: 20px; */
     margin-left: -10px;
 }
 
 .hebergements-row .card {
     width: 100%;
-    margin: 10px;
+    margin: 20px;
 }
 
 .hebergements-row img {
@@ -277,6 +292,7 @@ header .logo {
 }
 
 .hebergements-row .card-subtitle {
+    font-size: 14px;
     margin: 0;
 }
 
@@ -323,6 +339,7 @@ header .logo {
 }
 
 .populaires-cards .card-subtitle {
+    font-size: 14px;
     margin: 0;
 }
 
@@ -363,6 +380,7 @@ header .logo {
 .activites-cards .card-title { 
     padding-left: 20px;
     padding-bottom: 15px;
+    font-size: 16px;
 }
 
 
