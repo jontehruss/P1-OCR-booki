@@ -7,6 +7,9 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --white-bg-color: #FFFFFF;
+    --nav-menu: #000000;
+    --fa-grey: #313335;
 }
 
 .fa-solid {
@@ -15,7 +18,7 @@
 
 /****** Location dot ***********/
 #fa-location-dot {
-    color:#313335;
+    color: var(--fa-grey);
 }
 
 
@@ -45,7 +48,7 @@ a {
 /****** Cards ***********/
 
 .card {
-    background-color: white;
+    background-color: var(--white-bg-color);
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -72,19 +75,24 @@ a {
 header {
     display: flex;
     flex-direction: row;
+    height: 79px;
+    margin-bottom: 30px;
     justify-content: space-between;
-    /* border-style: dashed;
-    border-color: red; */
 }
 
-.logo {
-    margin-top:10px;
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
     height: 32px;
 }
 
 /****** Menu de navigation ***********/
 .nav-menu{
     display: flex;
+    align-items: flex-start;
 }
 
 .nav-menu ul {
@@ -96,8 +104,9 @@ header {
     display: flex;
     padding-left: 0px;
     margin-left: 40px;
-    color: #000000;
-    border-top: #ffffff;
+    margin-top:-20px;
+    color: var(--nav-menu);
+    border-top: var(--white-bg-color); 
     border-top-style: solid;
     min-width: min-content;
     max-width: max-content;
@@ -105,40 +114,33 @@ header {
   }
 
 .nav-menu ol:hover {
-    color: #0065FC;
-    border-top: #0065FC;
+    color: var(--main-color);
+    border-top: var(--main-color);
     border-top-style: solid;
   }
 
 /****** Titre général ***********/
 #main-title h1 {
     margin-bottom: 0px;
-    /* border-style: dashed;
-    border-color: red; */
 }
 
 #main-title p {
     margin-top: 0px;
-    /* border-style: dashed;
-    border-color: red; */
+    margin-bottom: 35px;
 }
 
 /****** Rechercher ***********/
 .search {
-    /* background-color: #F2F2F2; */
-    /* padding: 15px; */
-    margin-bottom: 15px;
-    /* border-style: dashed;
-    border-color: red; */
+    margin-bottom: 20px;
 }
 
 .search #fa-location-dot {
     padding: 15px;
     margin-right: 0px;
     border-radius: 15px 0px 0px 15px;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     border-style: solid;
-    border-color: #F2F2F2;
+    border-color: var(--main-bg-color);
 }
 
 .search #search-input {
@@ -148,9 +150,9 @@ header {
     margin-top: -10px;
     margin-left: -5px;
     border-top-style: solid;
-    border-top-color: #F2F2F2;
+    border-top-color: var(--main-bg-color);
     border-bottom-style: solid;
-    border-bottom-color: #F2F2F2;
+    border-bottom-color: var(--main-bg-color);
     border-right-style: none;
     border-left-style: none;
     font-weight: 900;
@@ -163,8 +165,8 @@ header {
     padding-right: 15px; 
     border-radius: 0px 15px 15px 0px;
     border-style: none;
-    background-color: #0065FC;
-    color: #ffffff;
+    background-color: var(--main-color);
+    color: var(--white-bg-color); 
     font-weight: 900;
 }
 
@@ -172,44 +174,42 @@ header {
 
 /****** Bouttons de filtre ***********/
 .filters span {
-    color: #000000;
+    color: var(--nav-menu);
     font-weight: 900;
     font-size: larger;
 }
 
 .filter-button {
     padding: 10px;
-    margin:15px;
+    margin: 7px;
     border-radius: 45px;
-    border: solid #F2F2F2;
-    background-color: #ffffff;
+    border: solid var(--main-bg-color);
+    background-color: var(--white-bg-color); 
     font-weight: 900;
     font-size: large;
 }
 
 .filter-button:hover {
-    background-color: #F2F2F2;
+    background-color: var(--filter-bg-color);
 }
 
+
+/****** info FA ***********/
 .info {
     margin-bottom : 15px;
 }
 
-/****** info FA ***********/
 .info {
     display: flex;
     align-items: center;
     flex-direction: row;
-    /* border-style: dashed;
-    border-color: red;  */
 }
 #fa-info {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 7px;
-    border: solid #F2F2F2;
-    /* border-color: #313335; */
+    border: solid var(--main-bg-color);
     width: 10px;
     height: 10px;
     padding: 7px;
@@ -232,11 +232,7 @@ header {
 
 /****** Hebergements ***********/
 .hebergements {
-    /* display: flex; */
-    /* flex-direction: row; */
     width: 65%;
-    /* border-style: dashed;
-    border-color: blue; */
 }
 
 .hebergements-title {
@@ -245,24 +241,17 @@ header {
     align-items: center;
 }
 
-/* vérifier pourquoi .card en comparaison à populaires*/
-/* .hebergements-cards .card { */
-
 .hebergements-row {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     height: auto;
     width: auto;
-    /* border-style: dashed;
-    border-color: blue; */
+    margin-left: -10px;
 }
 
 .hebergements-row .card {
     width: 100%;
     margin: 10px;
-    /* border-style: solid;
-    border-color: green; */
 }
 
 .hebergements-row img {
@@ -271,8 +260,6 @@ header {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
-    /* border-style: solid;
-    border-color: red; */
 }
 
 .hebergements-row .card-content {
@@ -282,27 +269,19 @@ header {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    /* border-style: solid;
-    border-color: orange; */
 }
 
 .hebergements-row .card-title {
     margin-top: 7px;
     margin-bottom: 4px;
-    /* border-style: solid;
-    border-color: orange; */
 }
 
 .hebergements-row .card-subtitle {
     margin: 0;
-    /* border-style: solid;
-    border-color: orange; */
 }
 
 .hebergements-row .card-rating {
     margin-bottom: 5px;
-    /* border-style: solid;
-    border-color: orange; */
 }
 
 
@@ -357,15 +336,33 @@ header {
     flex-direction: column;
     justify-content: space-between;
     margin-top: 20px;
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
+    background-color: var(--white-bg-color);
     padding: 30px;
-    /* width: 100%; */
 }
 
 .activites-cards {
     display: flex;
     flex-direction: row;
+    margin-left: -10px;
+}
+
+.activites-cards .card {
+    width: 100%;
+    margin: 10px;
+    padding: 0;
+}
+
+.activites-cards img {
+    width: 100%;
+    height:380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.activites-cards .card-title { 
+    padding-left: 20px;
+    padding-bottom: 15px;
 }
 
 
@@ -373,7 +370,6 @@ header {
 footer {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
     justify-content: space-around;
     margin-top: 20px;
     background-color: var(--main-bg-color);
@@ -382,6 +378,12 @@ footer {
 .footer-col {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer-col a {
+    margin-bottom: 10px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
