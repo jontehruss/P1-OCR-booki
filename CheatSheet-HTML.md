@@ -97,3 +97,29 @@
 9. `tabindex`: Cet attribut est utilisé  pour définir l'index de navigation d'un élément. Vous pouvez l'utiliser pour spécifier l'ordre dans lequel un élément doit être navigué, par exemple `tabindex="0"` pour le premier élément dans une liste.
 10. `accesskey`: Cet attribut est utilisé  pour définir la clé d'accès d'un élément. Vous pouvez l'utiliser pour spécifier la clé d'accès d'un élément, par exemple `accesskey="s"` pour un élément qui a une clé d'accès spécifique.
 ```
+
+
+# Viewport
+
+```html
+<!-- propriétés courrantes -->
+<meta name="viewport" >
+```
+
+- width=device-width : détermine la largeur de l’écran sur lequel le site Web sera affiché. En utilisant device-width, le site est mis à la largeur de l’écran de l’utilisateur.
+- width=1024 : détermine la largeur de l’écran sur lequel le site Web sera affiché. En utilisant 1024, la largeur de l’écran doit être égale à 1024 pixels.
+
+- initial-scale=1.0 : détermine le zoom initial de l’écran. En utilisant 1.0, l’écran est affiché plein sans zoom.
+- initial-scale=0.5 : détermine le zoom initial de l’écran. En utilisant 0.5, l’écran est affiché à un taux de zoom de 50%.
+
+- maximum-scale=1.0 : détermine le maximum de zoom possible pour l’écran. En utilisant 1.0, l’écran ne peut pas être zoommé au-delà d’un taux de 100%.
+- maximum-scale=1.5 : détermine le maximum de zoom possible pour l’écran. En utilisant 1.5, l’écran peut être zoommé au maximum de 150% (par rapport à l’état initial).
+
+- user-scalable=yes : détermine si l’utilisateur peut zoom sur l’écran. En utilisant yes, l’utilisateur peut zoomer sur l’écran.
+- user-scalable=no : l’utilisateur ne peut pas zoomer sur l’écran.
+
+```html
+<!-- faire en sorte que la balise <meta name="viewport" soit active uniquement pour les écrans mobiles. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes, target='handheld'">
+```
+- target='handheld' : signifie que la balise \\<meta name="viewport">\\ est active uniquement pour les écrans mobiles
