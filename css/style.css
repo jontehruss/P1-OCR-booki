@@ -256,7 +256,14 @@ header .logo {
     justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
+.hebergements-and-populaires .hebergements {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.hebergements-and-populaires .populaires {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -381,7 +388,7 @@ header .logo {
 .activites-cards {
     display: flex;
     flex-direction: row;
-    margin-left: -10px;
+    /* margin:auto; */
 }
 
 .activites-cards .card {
@@ -468,14 +475,19 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites-cards img {
+        height: 200px;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 768px) {
 
-    body {       
+    /* body {       
         width: 100%;
-    }
+    } */
 
     header {
         display: flex;
@@ -558,8 +570,9 @@ footer {
         flex-direction: column-reverse;
     }
 
-    .hebergements {
+    .hebergements-and-populaires .hebergements {
         width: 100%;
+        background-color: var(--white-bg-color);
     }
 
     .hebergements-row {
@@ -567,9 +580,19 @@ footer {
         flex-direction: column;
     }
 
+    .hebergements-row .card {
+        margin: 0px 0px 20px 0px;
+        padding: 0px;
+    }
+
+    .hebergements-row img {
+        height: 170px;
+    }
+
     .populaires {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 0px;
+        margin-bottom: 50px;
     }
 
     .populaires-cards {
@@ -593,16 +616,30 @@ footer {
     .activites-cards {
         display: flex;
         flex-direction: column;
-        margin-left: -10px;
     }
 
+    .activites-cards .card {
+        width: 100%;
+        margin: 10px 0px;
+        /* padding: 0; */
+    }
+
+    .activites-cards img {
+        height: 230px;
+    }
+    
     footer {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         margin-top: 20px;
         background-color: var(--main-bg-color);
-        display: none;
+        /* display: none; */
+    }
+
+    .footer-col {
+        padding: 0px 0px 0px 20px;
+        width: auto;
     }
 
 }
