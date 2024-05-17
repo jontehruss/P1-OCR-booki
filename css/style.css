@@ -102,7 +102,7 @@ header .logo {
     justify-content: space-between;
 }
 
-.nav-menu ol {
+.nav-menu li {
     display: flex;
     padding-left: 0px;
     margin-left: 40px;
@@ -115,7 +115,7 @@ header .logo {
     align-items: flex-start;
   }
 
-.nav-menu ol:hover {
+.nav-menu li:hover {
     color: var(--main-color);
     border-top: var(--main-color);
     border-top-style: solid;
@@ -517,7 +517,7 @@ footer {
         justify-content: space-around;
     }
 
-    .nav-menu ol {
+    .nav-menu li {
         width: 50%;
         margin:0;
         font-weight: 500;
@@ -527,7 +527,7 @@ footer {
         max-width: unset;
     }
 
-    .nav-menu ol:hover {
+    .nav-menu li:hover {
         color: var(--main-color);
         border-top: none;
         border-top-style: none;
