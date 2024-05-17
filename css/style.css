@@ -11,6 +11,7 @@
     --nav-menu: #000000;
     --light-grey: #f2f2f2;
     --fa-grey: #313335;
+    --box-shadow: rgba(0, 0, 0, 0.2);
 }
 
 .fa-solid {
@@ -192,6 +193,7 @@ header .logo {
     .search-button-mobile {
         display: none;
     }
+
 }
    
 
@@ -217,7 +219,7 @@ header .logo {
 }
 
 .filter-button {
-    padding: 10px 17px;
+    padding: 13px 17px;
     margin: 7px;
     border-radius: 45px;
     border: solid var(--main-bg-color);
@@ -536,8 +538,16 @@ footer {
     }
 
     .search{
-        margin-left: 20px;
-        margin-bottom: 35px;
+        margin: 0px 12px 35px 20px;
+        /* margin-left: 20px;
+        margin-bottom: 35px; */
+    }
+
+    .search #search-input {
+        font-size: 1.1em;
+        width: 100%;
+        max-width: 250px;
+        margin-right: -8px;
     }
 
     .search-button {
@@ -547,11 +557,13 @@ footer {
     .search-button-mobile {
         display: block;
         padding: 15px;
-        border-radius: 0px 15px 15px 0px;
+        border-radius: 15px;
         border-style: none;
         background-color: var(--main-color);         
         font-weight: 900;
+        box-shadow: 0 0px 8px 0 var(--box-shadow), 0 6px 20px 0 var(--box-shadow);
     }
+
 
     .fa-magnifying-glass {
         color: var(--white-bg-color);
@@ -561,13 +573,37 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin-top: 15px;
+        /* margin: 15px 0px 0px 20px; */
     }
 
     .filters span {
+        margin: 15px 0px 0px 20px;
         margin-bottom: 15px;
     }
 
+    .filter-container {
+        margin: 0px 10px;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        /* border: solid red; */
+    }
+
+    .filter-button {
+        font-size: 0.95em;
+        width: 155px;
+        display: flex;
+        flex-direction:row;
+    }
+
+    .filter-button i {
+        margin-right: 10px;
+    }
+
+    .info {
+        margin: 20px 0px 20px 20px;
+        font-weight: 500;
+    }
 
 /****** TOCHECK ***********/    
 
@@ -580,12 +616,17 @@ footer {
 
     #main-title {
         margin: 0px 20px;
-        font-size: 0.77em;
+        font-size: 0.70em;
     }
 
     #main-title p {
         font-size: 1.5em;
         margin-top: 0.5em;
+    }
+
+    .section-title {
+        margin: 20px 0px 0px 10px;
+        font-size:1.3em;
     }
     
     .hebergements-and-populaires {
@@ -611,10 +652,12 @@ footer {
         height: 170px;
     }
 
-    .populaires {
+    .hebergements-and-populaires .populaires {
         width: 100%;
         margin-top: 0px;
         margin-bottom: 50px;
+        padding: 10px 15px;
+        border-radius: 0px;
     }
 
     .populaires-cards {
