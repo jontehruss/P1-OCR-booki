@@ -1,1 +1,1 @@
-# booki-starter-pack
+# Maquette HTML/CSS du site web Booki
