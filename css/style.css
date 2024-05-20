@@ -453,10 +453,7 @@ footer {
 /****** Rechercher Mot/Icône ***********/
 @media screen and (min-width: 768px) {
     .search-button {
-        padding-top: 15px;
-        padding-bottom: 13px;
-        padding-left: 15px;
-        padding-right: 15px; 
+        padding: 15px 15px 13px 15px;
         border-radius: 0px 15px 15px 0px;
         border-style: none;
         background-color: var(--main-color);
