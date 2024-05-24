@@ -335,7 +335,7 @@ header .logo {
     justify-content: space-between;
     margin-top: 20px;
     background-color: var(--white-bg-color);
-    padding: 30px;
+    padding: 15px;
 }
 
 .activites-cards {
@@ -545,6 +545,7 @@ footer {
 
     .filter-button {
         font-size: 0.95em;
+        margin: 2px;
         width: 150px;
         display: flex;
         flex-direction:row;
