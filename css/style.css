@@ -22,8 +22,7 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
+    margin: 0px 8px;
 }
 
 .main-container {
@@ -90,13 +89,13 @@ header .logo {
 
 .nav-menu ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin-top: 0px;
 }
 
 .nav-menu li {
     display: flex;
     padding-left: 0px;
+    padding-top: 16px;
     margin-left: 40px;
     color: var(--nav-menu);
     border-top: solid var(--white-bg-color); 
@@ -110,6 +109,7 @@ header .logo {
 .nav-menu li:hover {
     color: var(--main-color);
     border-top: solid var(--main-color);
+    padding-top: 16px;
   }
 
 #main-title h1 {
@@ -371,6 +371,12 @@ footer {
     background-color: var(--main-bg-color);
 }
 
+footer h2 {
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 .footer-col {
     display: flex;
     flex-direction: column;
@@ -499,7 +505,6 @@ footer {
     .search #search-input {
         font-size: 1.1em;
         width: 100%;
-        max-width: 250px;
         margin-right: -8px;
     }
 
